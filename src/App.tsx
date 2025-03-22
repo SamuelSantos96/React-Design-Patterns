@@ -3,7 +3,7 @@ import { Right } from "./components/Right";
 import { SplitScreen } from "./components/SplitScreen";
 
 const App = () => {
-  return <SplitScreen leftWeight={50} rightWeight={80}>
+  return <SplitScreen leftWeight={15} rightWeight={80}>
     <Left />
     <Right />
   </SplitScreen>
