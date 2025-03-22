@@ -1,7 +1,12 @@
+import { Left } from "./components/Left";
+import { Right } from "./components/Right";
+import { SplitScreen } from "./components/SplitScreen";
+
 const App = () => {
-  return <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>;
+  return <SplitScreen leftWeight={50} rightWeight={80}>
+    <Left />
+    <Right />
+  </SplitScreen>
 }
 
 export default App;
