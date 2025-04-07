@@ -13,9 +13,13 @@
 // import { movies } from './data/ListPattern/movies';
 
 // MODAL
-import GamesInfo from './components/Modal/GamesInfo';
-import { Modal } from './components/Modal/Modal';
-import { games } from './data/Modal/games';
+// import GamesInfo from './components/Modal/GamesInfo';
+// import { Modal } from './components/Modal/Modal';
+// import { games } from './data/Modal/games';
+
+// CONTAINER
+import { TodoList } from './components/Container/TodoList';
+import SingleTodoLoader from './shared/Container/SingleTodoLoader';
 
 const App = () => {
     return (
@@ -43,9 +47,12 @@ const App = () => {
             /> */}
 
             {/* MODAL */}
-            <Modal>
+            {/* <Modal>
                 <GamesInfo data={games}></GamesInfo>
-            </Modal>
+            </Modal> */}
+            <SingleTodoLoader>
+                <TodoList></TodoList>
+            </SingleTodoLoader>
         </>
     );
 };
